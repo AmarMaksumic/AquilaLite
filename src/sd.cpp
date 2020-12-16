@@ -15,7 +15,6 @@ SdFile root;
 // VELLEMAN I/O VMA304: SD shield: pin 10 
 
 bool initialize_card(int card_pin) {
-
   if (!card.init(SPI_HALF_SPEED, card_pin) && !volume.init(card)) {
   return false;
   } else {
